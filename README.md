@@ -54,17 +54,10 @@ Key business task:
 - Documented the cleaning and transformation steps.
 
 **SQL Files:**
-[Data Combining]()
-[Data Exploration]()
-[Data Cleaning]()
-[Data Analysis]()
-1. [`Data_Merging.sql`]()
-2. [`data_Exploration.sql`]()
-3. [`Data_Cleaning.sql`]()
-4. [`Data_Analysis.sql`]()
-
-**Deliverable:**
-- Documentation of data cleaning and manipulation steps.
+1. [`Data_Combining.sql`](https://github.com/giorgishengelia/cyclistic-bike-share-analysis/blob/main/Combining_data.sql)
+2. [`data_Exploration.sql`](https://github.com/giorgishengelia/cyclistic-bike-share-analysis/blob/main/Data_Exploration.sql)
+3. [`Data_Cleaning.sql`](https://github.com/giorgishengelia/cyclistic-bike-share-analysis/blob/main/Cleaning_Data.sql)
+4. [`Data_Analysis.sql`](https://github.com/giorgishengelia/cyclistic-bike-share-analysis/blob/main/Data_Analysis.sql)
 
 ---
 
