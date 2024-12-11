@@ -61,7 +61,7 @@ Key business task:
 **Data Exploration** 
 
 Ran queries for each column for any missing values, inconsistencies or errors with the dataset. 
-The data set consists of **13 variables**, as shown in the following: <br>
+Preview of the variables:
 
 | **No.**|  **Variable**       |  **Description**                                        |
 |--------|------------------   | --------------------------------------------------------|
@@ -86,6 +86,8 @@ The dataset was cleaned by:
 - Exclusing the **rides with duration less than a minute** or **longer than a day**.
 
 In total, 4,224,062 rows were returned, which means 1,443,655 rows were removed.
+Preview with the data type of each variable:
+<img width="352" alt="DataType" src="">
 ---
 
 ### 4. **Analyze**
