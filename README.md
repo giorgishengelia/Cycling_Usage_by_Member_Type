@@ -83,11 +83,11 @@ Preview of the variables:
 The dataset was cleaned by:
 - Removing the trips with **null values**.
 - Adding 3 columns: '**ride_length_in_mins**', '**day_of_week**' and '**month**'.
-- Exclusing the **rides with duration less than a minute** or **longer than a day**.
+- Excluding the rides with duration less than a minute or longer than a day.
 
-In total, 4,224,062 rows were returned, which means 1,443,655 rows were removed.
-Preview with the data type of each variable:
-<img width="352" alt="DataType" src="">
+In Total, 4,224,062 rows were returned, which means 1,443,655 rows were removed.
+Preview with the data type of each variable: <img width="352" alt="DataPreview" src="">
+
 ---
 
 ### 4. **Analyze**
