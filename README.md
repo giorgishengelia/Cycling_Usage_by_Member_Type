@@ -55,7 +55,7 @@ Key business task:
 
 **SQL Files:**
 1. [`Data_Combining.sql`](https://github.com/giorgishengelia/cyclistic-bike-share-analysis/blob/main/Combining_data.sql)
-2. [`data_Exploration.sql`](https://github.com/giorgishengelia/cyclistic-bike-share-analysis/blob/main/Data_Exploration.sql)
+2. [`Data_Exploration.sql`](https://github.com/giorgishengelia/cyclistic-bike-share-analysis/blob/main/Data_Exploration.sql)
 3. [`Data_Cleaning.sql`](https://github.com/giorgishengelia/cyclistic-bike-share-analysis/blob/main/Cleaning_Data.sql)
 4. [`Data_Analysis.sql`](https://github.com/giorgishengelia/cyclistic-bike-share-analysis/blob/main/Data_Analysis.sql)
 
