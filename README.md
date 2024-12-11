@@ -47,11 +47,6 @@ Key business task:
 ---
 
 ### 3. **Process**
-**Tasks:**
-- Loaded data into SQL for cleaning.
-- Checked for missing values and inconsistencies.
-- Standardized date formats and calculated ride lengths.
-- Documented the cleaning and transformation steps.
 
 **SQL Files:**
 1. [`Data_Combining.sql`](https://github.com/giorgishengelia/cyclistic-bike-share-analysis/blob/main/Combining_data.sql)
@@ -59,6 +54,38 @@ Key business task:
 3. [`Data_Cleaning.sql`](https://github.com/giorgishengelia/cyclistic-bike-share-analysis/blob/main/Cleaning_Data.sql)
 4. [`Data_Analysis.sql`](https://github.com/giorgishengelia/cyclistic-bike-share-analysis/blob/main/Data_Analysis.sql)
 
+**Data Combining** 
+
+12 datasets for each month from Jan 2022 till Dec 2022 were combined into one table with 5,667,717 rows. 
+
+**Data Exploration** 
+
+Ran queries for each column for any missing values, inconsistencies or errors with the dataset. 
+The data set consists of **13 variables**, as shown in the following: <br>
+
+| **No.**|  **Variable**       |  **Description**                                        |
+|--------|------------------   | --------------------------------------------------------|
+| 1      | ride_id             | Unique ID assigned to each ride                         |
+| 2      | rideable_type       | classic, docked, or electric                            |
+| 3      | started_at          | Date and time at the start of trip                      |
+| 4      | ended_at            | Date and time at the end of trip                        |
+| 5      | start_station_name  | Name of the station where the ride journey started from |
+| 6      | start_station_id    | ID of the station where the ride journey started from   |
+| 7      | end_station_name    | Name of the station where the ride trip ended at        |
+| 8      | end_station_id      | ID of the station where the ride trip ended at          |
+| 9      | start_lat           | Latitude of starting station                            |
+| 10     | start_lng           | Longitude of starting station                           |
+| 11     | end_lat             | Latitude of ending station                              |
+| 12     | end_lng             | Longitude of ending station                             |                            
+| 13     | member_casual       | Type of membership of each rider                        |
+
+**Data Cleaning**
+The dataset was cleaned by:
+- Removing the trips with **null values**.
+- Adding 3 columns: '**ride_length_in_mins**', '**day_of_week**' and '**month**'.
+- Exclusing the **rides with duration less than a minute** or **longer than a day**.
+
+In total, 4,224,062 rows were returned, which means 1,443,655 rows were removed.
 ---
 
 ### 4. **Analyze**
