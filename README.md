@@ -54,8 +54,14 @@ Key business task:
 - Documented the cleaning and transformation steps.
 
 **SQL Files:**
-- `data_cleaning.sql`
-- `data_transformation.sql`
+[Data Combining]()
+[Data Exploration]()
+[Data Cleaning]()
+[Data Analysis]()
+1. [`Data_Merging.sql`]()
+2. [`data_Exploration.sql`]()
+3. [`Data_Cleaning.sql`]()
+4. [`Data_Analysis.sql`]()
 
 **Deliverable:**
 - Documentation of data cleaning and manipulation steps.
