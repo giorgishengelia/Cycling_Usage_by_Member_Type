@@ -22,6 +22,12 @@ Key business task:
 - **Findings:** A detailed report summarizing key insights and recommendations.
 
 ---
+### **Technologies Used**
+- Google BigQuery
+- SQL
+- Tableau
+- Excel
+---
 
 ## **Data Analysis Process**
 
@@ -96,87 +102,117 @@ Preview with the data type of each variable: <img width="352" alt="DataPreview" 
 ### 4. **Analyze**
 **Tasks:**
 - Used SQL to calculate descriptive statistics and trends:
+  - Total Rides.
   - Average ride lengths for members vs. casual riders.
   - Ride counts by day of the week and hour of the day.
-  - Popular start and end stations.
-- Created pivot tables and summary tables for visualization.
+  
+- Created tables and summary tables for visualization to help answer the Guiding Questions.
 
-**Key Insights:**
-- Casual riders predominantly use bikes during weekends for leisure.
-- Members tend to use bikes consistently throughout the week, often for commuting.
+**Rides by Membership Type**
 
-**Deliverable:**
-- Summary of analysis, trends, and relationships in the data.
+![Membership Types](https://github.com/giorgishengelia/Assets/blob/main/Total_rides_by_member.jpg)
+- **Cyclistic members** accounted for about **59.4%** of total rides whereas casual riders made up **40.6%** of total rides in 2022. <br>
+
+**Types of Bikes**
+
+The types of bicycles used for the trips are displayed as follow:
+
+![Types of Bikes](https://github.com/giorgishengelia/Assets/blob/main/Bike_type.jpg)
+
+- Cyclistic members and casual riders prefer show a higher preference for **classic bicycles over electric bicycles**.
+<br>
+
+**Average Ride Duration**
+
+The average ride length is plotted against the type of users (member vs. casual):
+
+![Avg Ride Length (Year)](https://github.com/giorgishengelia/Assets/blob/main/Avg_ride_length.jpg)
+- The ride duration of Cyclistic members are approximately two times smalelr than casual riders.
+<br>
+
+**Monthly Trips Taken**
+
+The preference of cycling activity can be determined by drawing the graph of trips taken against month from January to December 2022. 
+
+![Total Rides (Month)](https://github.com/giorgishengelia/Assets/blob/main/Monthly_Trips.jpg)
+- Both Cyclistic members and casual riders have similar low activity, 65,051 rides and 12,355 rides respectively in **January 2022**.
+- **Cyclistic members** have the **highest activity** (323,073 rides) in **August 2022**.
+- **Casual riders** have the **greatest activity** (303,273 rides) in **July 2022**.
+<br>
+
+**Monthly Average Ride length**
+
+The mean trip duration is depicted in the line graph below. 
+
+![Avg  Ride Length (Month)](https://github.com/giorgishengelia/Assets/blob/main/Monthly_Average.jpg)
+- The monthly average ride duration for **Cyclistic members** is the **highest** in **June** (13.65 minutes).
+- For **casual riders**, the **highest** mean trip duration is in **May** (27.75 minutes).
+<br>
+
+**Weekly Average Ride Length**
+
+The mean ride duration across the week is displayed as follow.
+
+![Avg  Ride Length (Week)](https://github.com/giorgishengelia/Assets/blob/main/Weekly_Average.jpg)
+- **Cyclistic members** cycled the **longest on Saturday** with an average ride length of 14.01 minutes.
+- On the other hand, **casual riders cycled the longest on Sunday** with a mean trip duration of 27.18 minutes. 
+
+**Rides by Time of The Day**
+
+Sum of Ride counts taken during each hour of the day.
+
+![Daily_rides_by_hour](https://github.com/giorgishengelia/Assets/blob/main/Rides_by_time_of_the_day.jpg)
+- Most amount of rides by both Casual riders and Members were taken during the day at 4pm - 6pm on Weekdays and 12pm - 4pm on the Weekends.
+- Least amount of rides were taken at night between 12am - 4am
+- Most rides were taken on Wednesdays at 5pm with 72,605 rides total
+- Least rides were taken on Wednesdays at 3am with 700 rides total. 
 
 ---
 
 ### 5. **Share**
-**Tasks:**
-- Visualized data trends using tools like Tableau and Excel.
-- Created charts such as:
-  - Heatmaps (Day of Week vs. Hour of Day with Ride Counts).
-  - Bar charts (Ride Counts by User Type).
-  - Line graphs (Ride Duration Trends by Month).
 
-**Visualization Images:**
-- Heatmap showcasing peak hours for casual riders and members.
-- Bar chart comparing ride frequencies between user types.
+![Cycling_Use Dashboard](https://github.com/giorgishengelia/Assets/blob/main/Cyclistic%20Dashboard.jpg)
+View [Cycling Use Dashboard](https://public.tableau.com/app/profile/george.shengelia/viz/CyclingUsageDashboardbyMemberType/CyclingDashboard).
 
-**Deliverable:**
-- Supporting visualizations to communicate findings effectively.
+The similiarities and differences between Cyclistic members and casual riders were drawn from the dashboard above.
+
+**Similarities:**
+- Both Cyclistic members and casual riders **prefer riding bicycles in the spring and summer seasons** (from May to September). However, the number of rides decrease since September. This may be due to change of season in which the weather temperature drops and becomes uncomfortable for rides. 
+- Both Cyclistic members and casual riders **prefer classic bicycles over electric bicycles**. 
+- Both Cyclistic members and casual riders have **higher average ride duration on weekends as compared to on weekdays**.
+
+**Differences:**
+- **Cyclistic members** go on **more rides** than casual riders.
+- **Cyclistic members** have **smaller average ride length** (12.41 minutes) than casual riders (23.82 minutes). Hence, this may suggest that the Cyclistic members take the bicycles for **short trips or short distance travel**. 
+- **Cyclistic members** show **consistent rides** throughout the week while casual riders have the busiest activites on weekends and lowest activities during weekdays. This may indicate that the Cyclistic members use the bicycles for ***purpose-oriented rides** such as work or errands while the casual riders use bicycles for leisure or recreational activities.  
 
 ---
 
 ### 6. **Act**
-**Tasks:**
-- Formulated actionable recommendations:
-  1. Launch weekend promotion campaigns targeting casual riders.
-  2. Develop a loyalty program emphasizing benefits for regular commuters.
-  3. Use targeted digital ads highlighting convenience and cost-saving aspects of membership.
 
-**Deliverable:**
-- Final recommendations for the marketing strategy.
+**Aactionable Recommendations**:
+ From the analysis above, we can design marketing strategies to convert casual riders to Cyclistic members.
 
----
+- **Flexible Membership Options** <br>
+Introduce a variety of membership plans, such as annual, monthly, and daily options, priced at $365/year, $45/month, and $3/day. This will allow riders to select a plan that suits their individual needs, with shorter-term memberships offering a convenient option for those who may not require a full-year commitment.
 
-## **How to Use This Repository**
+- **Digital Engagement Strategies** <br>
+Leverage the rides by time of the day heatmap to plan to connect with casual riders and potential members at the right time. Create engaging visual content that captures the joy of cycling throughout different seasons and activities to inspire others to join.
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/username/cyclistic-bike-share-analysis.git
-   ```
+- **Discounted Group Plans** <br>
+Provide discounted membership packages for groups, including friends, families, and students. This initiative can motivate people to sign up together, fostering social connections and promoting group cycling activities.
 
-2. **Review SQL Scripts:**
-   - Navigate to the `SQL/` folder and review the data cleaning and analysis scripts.
+- **Membership Loyalty Points System** <br>
+Implement a membership loyalty points system for users to collect points for each ride. Rewards such as membership discount will be given based on the number of points collected. This will encourage riders to use the service more frequently, driving engagement and loyalty. 
 
-3. **Explore Visualizations:**
-   - Check the `Visualizations/` folder for data insights in the form of images and Tableau dashboards.
+- **Loyalty Rewards Program** <br>
+Create a loyalty program where members earn points for each ride. Accumulated points can be redeemed for rewards like membership discounts. This system encourages frequent use, enhancing member retention and engagement.
 
-4. **Read the Final Report:**
-   - Refer to `final_report.pdf` for a detailed summary of the findings and recommendations.
+- **Seasonal Promotions** <br>
+Run limited-time seasonal campaigns featuring discounts, midweek offers, or extended ride durations for members. These promotions can help balance demand across seasons and make the service more appealing.
 
 ---
+## Conclusion 
 
-## **Technologies Used**
-
-- **SQL:** For data cleaning and analysis.
-- **Tableau:** For creating visualizations.
-- **Excel:** For additional data manipulation.
-- **Python (Optional):** Used for advanced analysis (if applicable).
-
----
-
-## **Acknowledgments**
-
-Special thanks to the Cyclistic marketing analytics team for providing data and guidance.
-
----
-
-## **Contact**
-
-For questions or feedback, please reach out via GitHub Issues or email at [your_email@example.com].
-
----
-
-Thank you for exploring this project. We hope these insights help Cyclistic achieve speedy success!
+To summarize, this analysis sheds light on the distinct preferences and behaviors of members and casual riders. By crafting strategies that align with these differences, we can successfully encourage casual riders to transition into becoming loyal members.
 
